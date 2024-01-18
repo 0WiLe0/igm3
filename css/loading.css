@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #111125 0%, #2F348C 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: loading 5s forwards;
+}
+.logo_load{
+    height: 566px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.logo_load h1{
+    color: #FFF;
+    font-family: 'Baloo 2';
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.logo_load p{
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+@keyframes loading {
+    0%,
+    95%{
+        opacity: 100%;
+    }
+    99%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 0%;
+        display: none;
+    }
+}
+
+.loader {
+    margin-top: 25px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: -72px 0 #FFF inset;
+    }
+    100% {
+      box-shadow: 48px 0 #FFF inset;
+    }
+  }
+       
+      

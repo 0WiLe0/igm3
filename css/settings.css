@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(180deg, #E5E5FF 0%, #B2B2E0 100%);
+}
+/*Меню*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Начальное положение меню*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/*Меню*/
+a{
+    text-decoration: none;
+}
+.header{
+    width: 145px;
+    height: 100vh;
+    background: linear-gradient(180deg, #09092B 0%, #2F348E 100%);
+    transition: .2s;
+}
+.menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+/*Положение блоков*/
+.menu_top{
+    margin-top: 34px;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+.menu_bot{
+    margin-bottom: 29px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+}
+/*ЛОГО*/
+.menu_logo{
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+.logo_text{
+    display: none;
+    transition: .5s;
+}
+.logo_text_t{
+    display: none;
+    transition: .5s;
+}
+.logo_text_b{
+    display: none;
+    transition: .5s;
+}
+/*Профиль*/
+.profile_menu{
+    width: 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background: #1C2062;
+    transition: .2s;
+}
+.profile_text_t{
+    display: none;
+    transition: .5s;
+}
+.profile_text_b{
+    display: none;
+    transition: .5s;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: #FFF;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .2s;
+}
+.message p{
+    display: none;
+    font-size: 0px;
+    transition: 5s;
+}
+.message img{
+    width: 29px;
+    height: 29px;
+    margin-left: 10px;
+    margin-right: 8px;
+
+}
+/*активное меню*/
+.header:hover header{
+    width: 100%;
+    height: 100%;
+    background: rgba(55, 58, 128, 0.61);
+    
+}
+
+a{
+    text-decoration: none;
+}
+.header:hover{
+    width: 407px;
+    height: 100vh;
+    background: linear-gradient(180deg, #09092B 0%, #2F348E 100%);
+    transition: .2s;
+}
+.header:hover .menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+.header:hover .menu_top{
+    margin-top: 34px;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+}
+.header:hover .menu_bot{
+    margin-bottom: 29px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.header:hover .menu_logo{
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+.header:hover .logo_text{
+    margin-left: 17px;
+    display: block;
+    transition: .5s;
+}
+.header:hover .logo_text_t{
+    display: flex;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .5s;
+}
+.header:hover .logo_text_b{
+    display: flex;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .5s;
+}
+
+.header:hover .profile_menu{
+    width: 308px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background: #1C2062;
+    transition: .2s;
+}
+.header:hover .profile_text_t{
+    display: flex;
+    color: #FFF;
+    font-family: Comfortaa;
+    animation: AniTextProfileTop 0.3s forwards;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.header:hover .profile_text_b{
+    display: flex;
+    color: #FFF;
+    font-family: Comfortaa;
+    animation: AniTextProfileBot 0.3s forwards;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.header:hover .message{
+    display: flex;
+    align-items: center;
+    width: 306px;
+    height: 50px;
+    border-radius: 5px;
+    background: #FFF;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .2s;
+}
+.header:hover .message p{
+    display: flex;
+    animation: AniText 0.3s forwards;
+    transition: .2s;
+}
+.header:hover .message img{
+    width: 29px;
+    height: 29px;
+    margin-left: 34px;
+    margin-right: 25px;
+    transition: .2s;
+}
+
+@keyframes AniText {
+    0%,
+    50%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 22px;
+    }
+}
+@keyframes AniTextProfileTop {
+    0%,
+    50%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 25px;
+    }
+}
+@keyframes AniTextProfileBot {
+    0%,
+    50%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 19px;
+    }
+}
+/*Основные теги в Профиле*/
+.container{
+    width: 1055px;
+    margin: 0 auto;
+    padding-left: 145px;
+}
+/*Блок настроек*/
+.settings_block{
+    width: 1055px;
+    height: 379px;
+    border-radius: 5px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.settings_title{
+    height: 146px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.settings_block_t{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ch_th h2{
+    height: 114px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.theme{
+    display: flex;
+}
+.theme button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #AEAEAE;
+    background: #FFF;
+    margin-right: 20px;
+}
+.circle_black{
+    width: 27px;
+    height: 27px;
+    border-radius: 28px;
+    background: #1B1B1B;
+}
+.circle_red{
+    width: 27px;
+    height: 27px;
+    border-radius: 28px;
+    background: #BD4040;
+}
+.circle_blue{
+    width: 27px;
+    height: 27px;
+    border-radius: 28px;
+    background: #3E67D2;
+}
+
+.social h2{
+    height: 114px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.social_btn{
+    display: flex;
+}
+.social_btn a{
+    width: 61px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #AEAEAE;
+    background: #FFF;
+    margin-right: 20px;
+}
+
+.settings_block_b{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.akk_del h2{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.akk_del form input{
+    border: none;
+    width: 290px;
+    height: 61px;
+    border-radius: 5px;
+    background: #454CD1;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.teh_pod h2{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.teh_pod a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 290px;
+    height: 61px;
+    border-radius: 5px;
+    background: #454CD1;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*Блок изменения информации профиля*/
+
+.red_title{
+    height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.red_akk_block{
+    width: 1055px;
+    height: 1247px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 50px;
+}
+.red_akk_block form{
+    width: 1055px;
+    height: 1247px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.red_akk_block form label{
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nick{
+    width: 831px;
+    height: 67px;
+    border-radius: 5px;
+    border: 3px solid #CCC;
+    background: #FFF;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 20px;
+}
+.link{
+    width: 517px;
+    height: 67px;
+    border-radius: 5px;
+    border: 3px solid #CCC;
+    background: #FFF;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 20px;
+    margin-left: 22px;
+}
+.red_link span{
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.btn_red{
+    border: none;
+    width: 855px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #454CD1;   
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}

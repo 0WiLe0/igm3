@@ -1,0 +1,743 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(180deg, #E5E5FF 0%, #B2B2E0 100%);
+}
+/*Меню*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Начальное положение меню*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/*Меню*/
+a{
+    text-decoration: none;
+}
+.header{
+    width: 145px;
+    height: 100vh;
+    background: linear-gradient(180deg, #09092B 0%, #2F348E 100%);
+    transition: .2s;
+}
+.menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+/*Положение блоков*/
+.menu_top{
+    margin-top: 34px;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+.menu_bot{
+    margin-bottom: 29px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+}
+/*ЛОГО*/
+.menu_logo{
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+.logo_text{
+    display: none;
+    transition: .5s;
+}
+.logo_text_t{
+    display: none;
+    transition: .5s;
+}
+.logo_text_b{
+    display: none;
+    transition: .5s;
+}
+/*Профиль*/
+.profile_menu{
+    width: 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background: #1C2062;
+    transition: .2s;
+}
+.profile_text_t{
+    display: none;
+    transition: .5s;
+}
+.profile_text_b{
+    display: none;
+    transition: .5s;
+}
+
+.message{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: #FFF;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .2s;
+}
+.message p{
+    display: none;
+    font-size: 0px;
+    transition: 5s;
+}
+.message img{
+    width: 29px;
+    height: 29px;
+    margin-left: 10px;
+    margin-right: 8px;
+
+}
+/*активное меню*/
+.header:hover header{
+    width: 100%;
+    height: 100%;
+    background: rgba(55, 58, 128, 0.61);
+    
+}
+
+a{
+    text-decoration: none;
+}
+.header:hover{
+    width: 407px;
+    height: 100vh;
+    background: linear-gradient(180deg, #09092B 0%, #2F348E 100%);
+    transition: .2s;
+}
+.header:hover .menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+.header:hover .menu_top{
+    margin-top: 34px;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+}
+.header:hover .menu_bot{
+    margin-bottom: 29px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.header:hover .menu_logo{
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+.header:hover .logo_text{
+    margin-left: 17px;
+    display: block;
+    transition: .5s;
+}
+.header:hover .logo_text_t{
+    display: flex;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .5s;
+}
+.header:hover .logo_text_b{
+    display: flex;
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .5s;
+}
+
+.header:hover .profile_menu{
+    width: 308px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background: #1C2062;
+    transition: .2s;
+}
+.header:hover .profile_text_t{
+    display: flex;
+    color: #FFF;
+    font-family: Comfortaa;
+    animation: AniTextProfileTop 0.3s forwards;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.header:hover .profile_text_b{
+    display: flex;
+    color: #FFF;
+    font-family: Comfortaa;
+    animation: AniTextProfileBot 0.3s forwards;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.header:hover .message{
+    display: flex;
+    align-items: center;
+    width: 306px;
+    height: 50px;
+    border-radius: 5px;
+    background: #FFF;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .2s;
+}
+.header:hover .message p{
+    display: flex;
+    animation: AniText 0.3s forwards;
+    transition: .2s;
+}
+.header:hover .message img{
+    width: 29px;
+    height: 29px;
+    margin-left: 34px;
+    margin-right: 25px;
+    transition: .2s;
+}
+
+@keyframes AniText {
+    0%,
+    50%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 22px;
+    }
+}
+@keyframes AniTextProfileTop {
+    0%,
+    50%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 25px;
+    }
+}
+@keyframes AniTextProfileBot {
+    0%,
+    50%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 19px;
+    }
+}
+/*Основные теги в Профиле*/
+.container{
+    width: 1575px;
+    margin: 0 auto;
+    padding-left: 145px;
+}
+.profile_block{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+/*Профиль дополнительная секция*/
+.profile_avat{
+    width: 500px;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background: #FFF;
+}
+.avat_btn{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn_mes{
+    border: none;
+    width: 324px;
+    height: 61px;
+    border-radius: 5px;
+    background: #454CD1;
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.btn_add{
+    border: none;
+    width: 57px;
+    height: 62px;
+    border-radius: 5px;
+    background: #454CD1;
+}
+.btn_del{
+    border: none;
+    width: 57px;
+    height: 62px;
+    border-radius: 5px;
+    background: #454CD1;
+}
+
+/*Блок друзей*/
+
+.profile_friends{
+    width: 500px;
+    height: 276px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-top: 20px;
+}
+.friends_title{
+    height: 71px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.friends_block{
+    display: flex;
+    justify-content: space-evenly;
+}
+.friend{
+    width: 143px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.friend h3{
+    margin-top: 9px;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.friend p{
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.friend:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgba(50, 50, 114, 0.08);
+}
+
+/*Блок с сообществами*/
+.profile_public{
+    margin-top: 20px;
+    width: 500px;
+    height: 491px;
+    border-radius: 10px;
+    background: #FFF;
+}
+.public_title{
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.publicks_block{
+    height: 398px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.public{
+    width: 446px;
+    height: 119px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.public h3{
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.public:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgba(50, 50, 114, 0.08);
+}
+/*Блок с информацией о пользователи*/
+.profile_info{
+    width: 1055px;
+    height: 295px;
+    border-radius: 10px;
+    background: #FFF;
+}
+.info{
+    padding-top: 63px;
+    padding-left: 33px;
+}
+.nickname{
+    color: #000;
+    text-align: left;
+    font-family: Comfortaa;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.name{
+    color: #000;
+    text-align: left;
+    font-family: Comfortaa;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.status{
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-align: left;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 7px;
+}
+.cicrle{
+    width: 21px;
+    height: 21px;
+    background-color: #2F8C6B;
+    border-radius: 100%;
+    margin-left: 9px;
+}
+.date_reg{
+    color: #000;
+    text-align: left;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 13px;
+}
+
+/*Блок с контактами*/
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1055px;
+    height: 295px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-top: 20px;
+}
+.contact_title{
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.contacts_block{
+    width: 842px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{
+    width: 143px;
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact p{
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+}
+.contact:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgba(50, 50, 114, 0.08);
+}
+
+/*Блок добавления поста*/
+
+.add_post{
+    width: 1055px;
+    height: 430px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-top: 20px;
+}
+.add_text{
+    width: 1020px;
+    margin: 0 auto;
+}
+.add_text form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_add_post{
+    border: none;
+    width: 217px;
+    height: 55px;
+    border-radius: 5px;
+    background: #454CD1;
+    color: #FFF;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.write_news{
+    height: 84px;
+    border:none;
+    width: 746px;
+    border-bottom: 1px solid #AEAEAE;
+    color: #000000;
+    font-family: Comfortaa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+.add_img{
+    width: 277px;
+    height: 307px;
+    border-radius: 5px;
+    border: 1px solid #AEAEAE;
+    margin-left: 19px;
+    margin-top: 20px;
+}
+.add_img form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Блок с постом*/
+.post_info{
+    width: 936px;
+    display: flex;
+    align-items: center;
+    height: 147px;
+}
+.post_author{
+    margin-left: 11px;
+}
+.nickname_author{
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.name_author{
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.post_stat{
+    width: 936px;
+    height: 134px;      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post_lcr{
+    width: 237px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.like{
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.like span{
+    margin-left: 7px;
+}
+.com{
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.com span{
+    margin-left: 7px;
+}
+.rep{
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.rep span{
+    margin-left: 7px;
+}
+.post_date{
+    color: #000;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.post_text p{
+    width: 936px;
+    overflow-wrap: break-word;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.post_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post{
+    width: 1055px;
+    min-height: 963px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #FFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+      
